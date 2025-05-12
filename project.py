@@ -5,7 +5,7 @@ import numpy as np
 from scipy.stats import expon
 ILI= pd.read_csv("ilidata.csv")
 states= []
-for val in ILI state["state"]:
+for val in ILI ["state"]:
     if val not in states:
         states.append(val)
 state=st.selectbox(
