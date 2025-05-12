@@ -10,3 +10,6 @@ state=st.selectbox(
   index=NONE,
   placeholder="Select a State"
 )
+if state:
+  state_data = ILI[ILI['state'] == state]
+  st.line_chart(state_data[['weeks', 'ili']].set_index('weeks'))
