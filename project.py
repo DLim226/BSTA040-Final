@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import expon
 ILI= pd.read_csv("ilidata.csv")
+ILI=ILI.sort_values(by="epiweek")
+ILI["weeks"]=range(len(ILI))
 state=st.selectbox(
   "Choose a State:",
   ILI['state'],
