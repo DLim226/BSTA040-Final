@@ -7,7 +7,7 @@ ILI= pd.read_csv("ilidata.csv")
 state=st.selectbox(
   "Choose a State:",
   ILI['state'],
-  index=NONE,
+  index=None,
   placeholder="Select a State"
 )
 if state:
