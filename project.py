@@ -16,6 +16,7 @@ state=st.selectbox(
 st.write("You selected:", state)
 if state:
   state_data = ILI[ILI["state"]==state]
+  st.write("Filtered data:", state_data[["weeks", "ili"]])
   st.line_chart(
   state_data,
   x="weeks",
