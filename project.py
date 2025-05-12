@@ -11,4 +11,4 @@ state=st.selectbox(
   index=None,
   placeholder="Select a State",
 )
-st.write("You selected:", option)
+st.write("You selected:", state)
