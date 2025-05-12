@@ -1,1 +1,6 @@
-pandas\nmatplotlib\nnumpy\nscipy\nstreamlit
+pandas
+matplotlib
+numpy
+scipy
+streamlit
+
