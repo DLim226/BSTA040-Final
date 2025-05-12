@@ -10,3 +10,4 @@ state=st.selectbox(
 "VT", "WA", "WI", "WV", "WY"),
   index=None,
   placeholder="Select a State"
+st.write("You selected:", option)
