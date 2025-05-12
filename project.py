@@ -9,3 +9,4 @@ def load_data():
     df = df.sort_values(by='epiweek')
     df['weeks'] = range(len(df))
     return df
+df = load_data()
