@@ -15,6 +15,6 @@ st.write("You selected:", state)
 state_data = ILI[ILI["state"]==state]
 st.line_chart(
   state_data,
-  x="weeks"
+  x="weeks",
   y="ili"
 )
