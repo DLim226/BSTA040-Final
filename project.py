@@ -12,7 +12,7 @@ state=st.selectbox(
   placeholder="Select a State",
 )
 st.write("You selected:", state)
-state_data = ILI[ILI["state"]==state
+state_data = ILI[ILI["state"]==state]
 st.line_chart(
   state_data,
   x="weeks"
