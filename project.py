@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import expon
 ILI= pd.read_csv("ilidata.csv")
+ILI = ILI.assign(weeks = lambda x:range(len(x)))
 states= []
 for val in ILI ["state"]:
     if val not in states:
