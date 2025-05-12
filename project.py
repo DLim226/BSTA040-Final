@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import expon
 ILI= pd.read_csv("ilidata.csv")
+states= []
+for val in ILI state["state"]:
+    if val not in states:
+        states.append(val)
 state=st.selectbox(
   "Choose a State:",
   ILI["state"],
