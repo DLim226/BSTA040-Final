@@ -25,3 +25,7 @@ if state:
   x="weeks",
   y="ili"
 )
+arr = state_data["ili"]
+fig, ax = plt.subplots()
+ax.hist(arr, bins=20)
+st.pyplot(fig)
