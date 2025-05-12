@@ -10,7 +10,7 @@ for val in ILI ["state"]:
         states.append(val)
 state=st.selectbox(
   "Choose a State:",
-  ILI["state"],
+  states,
   index=None,
   placeholder="Select a State",
 )
