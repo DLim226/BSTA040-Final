@@ -6,7 +6,7 @@ from scipy.stats import expon
 ILI= pd.read_csv("ilidata.csv")
 state=st.selectbox(
   "Choose a State:",
-   sorted(ILI["state"].dropna().unique()),
+  ILI["state"]
   index=None,
   placeholder="Select a State",
 )
