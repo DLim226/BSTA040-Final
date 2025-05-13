@@ -26,7 +26,4 @@ if state:
   y="ili"
 )
 fig,ax = plt.subplots()
-ax.hist(ILI["ili"], desnity = True )
-ax.set_xlabel("ili percent")
-ax.set_ylabel("frequency")
-st.pyplot(fig)
+ili_values = state_data["ili"]
