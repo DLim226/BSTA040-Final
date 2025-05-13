@@ -25,7 +25,7 @@ if state:
   x="weeks",
   y="ili"
 )
-arr = state_data["ili"]
+arr = state_data["ili"].copy()
 fig, ax = plt.subplots()
 ax.hist(arr, bins=20)
 ax.set_xlabel("ILI PERCENT")
