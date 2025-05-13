@@ -15,12 +15,12 @@ state=st.selectbox(
   index=None,
   placeholder="Select a State",
 )
+st.header("ILI_Percentage_Over_Time")
 st.write("You selected:", state)
 if state:
   state_data = ILI[ILI["state"]==state]
   state_data = state_data.sort_values(by="epiweek")
   state_data["weeks"] = range(len(state_data)) 
-st.header("ILI_Percentage_Over_Time")
   st.line_chart(
   state_data,
   x="weeks",
