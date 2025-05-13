@@ -22,8 +22,8 @@ if state:
   state_data["weeks"] = range(len(state_data)) 
   st.line_chart(
   state_data,
-  x="Weeks",
-  y="ILI Percent"
+  x="weeks",
+  y="ili"
 )
 ili_values = state_data["ili"]
 loc, scale = expon.fit(ili_values)
