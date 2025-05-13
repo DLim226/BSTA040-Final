@@ -34,4 +34,4 @@ ax.plot(x,expon.pdf(x, loc = loc, scale = scale), lw=3)
 ax.set_xlabel("ILI percentage")
 ax.set_ylabel("Exponential Density")
 st.pyplot(fig)
-st.header(
+st.header("ILI Percentage Over Time")
