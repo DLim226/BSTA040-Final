@@ -20,6 +20,7 @@ if state:
   state_data = ILI[ILI["state"]==state]
   state_data = state_data.sort_values(by="epiweek")
   state_data["weeks"] = range(len(state_data)) 
+st.header("ILI_Percentage_Over_Time")
   st.line_chart(
   state_data,
   x="weeks",
@@ -34,4 +35,3 @@ ax.plot(x,expon.pdf(x, loc = loc, scale = scale), lw=3)
 ax.set_xlabel("ILI percentage")
 ax.set_ylabel("Exponential Density")
 st.pyplot(fig)
-st.header("ILI_Percentage_Over_Time")
