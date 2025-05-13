@@ -26,7 +26,7 @@ if state:
   y="ili"
 )
 fig, ax = plt.subplots()
-ax.hist(ili, bins=20)
+ax.hist(state_data, bins=20)
 ax.set_xlabel("ILI PERCENT")
 ax.set_ylabel("frequency")
 st.pyplot(fig)
