@@ -25,3 +25,5 @@ if state:
   x="weeks",
   y="ili"
 )
+fig,ax = plt.subplots()
+ax.hist(ILI["ili"])
