@@ -25,5 +25,9 @@ if state:
   x="weeks",
   y="ili"
 )
-fig,ax = plt.subplots()
 ili_values = state_data["ili"]
+loc, scale = expon.fit(ili_values)
+x = np.linspace(0, ili_values.max(), 1000)
+fig,ax = plt.subplots(figsize = (16,6))
+ax.plot(ili_values, bins =1000, density =True)
+st.pyplot(fig)
