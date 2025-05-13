@@ -35,4 +35,4 @@ def exponetial_pdf(x,lam):
 exponential _pdf(np.array([1,2,3]), 1/ili.mean())
 x= linspace (0,5,100)
 fig,ax = plt.subplots()
-ax.plot((ILI["ili"]),exponential_pdf)  
+st.pyplot(((ILI["ili"]),exponential_pdf))
