@@ -27,3 +27,6 @@ if state:
 )
 fig,ax = plt.subplots()
 ax.hist(ILI["ili"])
+ax.set_xlabel("ili")
+ax.set_ylabel("frequency")
+st.pyplot(fig)
