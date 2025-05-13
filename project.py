@@ -15,7 +15,7 @@ state=st.selectbox(
   index=None,
   placeholder="Select a State",
 )
-st.header("ILI_Percentage_Over_Time")
+st.header("ILI Percentage Over Time")
 st.write("You selected:", state)
 if state:
   state_data = ILI[ILI["state"]==state]
