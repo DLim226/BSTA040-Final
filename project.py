@@ -9,7 +9,6 @@ states= []
 for val in ILI ["state"]:
     if val not in states:
         states.append(val)
-state_data = ILI[ILI["state"]==state]
 state=st.selectbox(
   "Choose a State:",
   states,
