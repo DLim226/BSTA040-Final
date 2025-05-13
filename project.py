@@ -27,6 +27,12 @@ if state:
 )
 fig,ax = plt.subplots()
 ax.hist(ILI["ili"])
-ax.set_xlabel("ili")
+ax.set_xlabel("ili percent")
 ax.set_ylabel("frequency")
 st.pyplot(fig)
+def exponetial_pdf(x,lam):
+    return lam*np.exp(-lam*x)
+exponential _pdf(np.array([1,2,3]), 1/ili.mean())
+x= linspace (0,5,100)
+fig,ax = plt.subplots()
+ax.plot((ILI["ili"]),exponential_pdf)  
