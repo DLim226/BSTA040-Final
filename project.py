@@ -31,7 +31,7 @@ ili_values = state_data["ili"]
 loc, scale = expon.fit(ili_values)
 x = np.linspace(0, ili_values.max(), 1000)
 fig,ax = plt.subplots(figsize = (16,6))
-st.header("Histogram of Influneza-Like- Illnesses with Exponential Curve.")
+st.header("Histogram of ILI with Exponential Curve")
 ax.hist(ili_values, bins =1000, density =True)
 ax.plot(x,expon.pdf(x, loc = loc, scale = scale), lw=3)
 ax.set_xlabel("ILI percentage")
