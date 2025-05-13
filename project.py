@@ -29,6 +29,7 @@ ili_values = state_data["ili"]
 loc, scale = expon.fit(ili_values)
 x = np.linspace(0, ili_values.max(), 1000)
 y = expon.pdf(x, loc=loc, scale=scale)
+ax.plot(x, y, 'r--', lw=2, label="Exponential Fit")
 fig,ax = plt.subplots(figsize = (16,6))
 ax.plot(ili_values, bins =1000, density =True)
 st.pyplot(fig)
