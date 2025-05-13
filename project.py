@@ -25,20 +25,3 @@ if state:
   x="weeks",
   y="ili"
 )
-ili=state_data["ili"]
-lambda_value=1/ili.mean()
-fig, ax = plt.subplots(figsize=(12,5))
-ax.hist(ili, bins=20)
-ax.set_xlabel("ILI PERCENT")
-ax.set_ylabel("frequency")
-st.pyplot(fig)
-ax.plot(x, y, 'r--', label=f"Exponential Fit (λ = {lambda_value:.2f})")
-ax.set_xlabel("ILI Percent")
-ax.set_ylabel("Density")
- ax.set_title("ILI Histogram with Exponential Fit")
-ax.legend()
-st.pyplot(fig)
-def exponential_pdf(x,lam):
-    return lam *np.exp(-lam*x)
-x=np.linspace (0, ili.max(), 1000)
-y = exponential_pdf(x, lambda_value)
