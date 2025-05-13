@@ -26,7 +26,7 @@ if state:
   x="weeks",
   y="ili"
 )
-st.text("This chart shows the ILI percentage over time for the state that the user picks from 2010 to 2025. Each point on the line shows the percentage of patient visits who showed Influenza-Like Illnesses in that specific week.") 
+st.text("This chart shows the ILI percentage over time for the state that the user picks from 2010 to 2025. Each point on the line shows the percentage of patient visits who showed Influenza-Like Illnesses in that specific week.This chart helps us notice patterns to see how mild or severe each flu season was in that state.") 
 ili_values = state_data["ili"]
 loc, scale = expon.fit(ili_values)
 x = np.linspace(0, ili_values.max(), 1000)
