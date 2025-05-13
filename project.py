@@ -22,8 +22,8 @@ if state:
   state_data["weeks"] = range(len(state_data)) 
   st.line_chart(
   state_data,
-  x="weeks",
-  y="ili"
+  x="Weeks",
+  y="ILI Percent"
 )
 ili_values = state_data["ili"]
 loc, scale = expon.fit(ili_values)
@@ -34,3 +34,4 @@ ax.plot(x,expon.pdf(x, loc = loc, scale = scale), lw=3)
 ax.set_xlabel("ILI percentage")
 ax.set_ylabel("Exponential Density")
 st.pyplot(fig)
+st.header(
